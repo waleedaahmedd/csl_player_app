@@ -1,14 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
 
 import '../theme/custom_colors.dart';
 import '../theme/custom_fonts.dart';
-import '../widgets/games_gridview_list.dart';
-import '../widgets/tournament_horzontal_list.dart';
+import '../widgets/matches_gridview_list.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class RefereeHomeScreen extends StatelessWidget {
+  const RefereeHomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +46,9 @@ class HomeScreen extends StatelessWidget {
                     radius: 45.r,
                     backgroundImage: AssetImage('assets/images/profile.jpg'),
                   ),
-                  SizedBox(width: 10.w,),
+                  SizedBox(
+                    width: 10.w,
+                  ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -65,7 +66,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-
                 ],
               ),
             ),
@@ -73,22 +73,14 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                'Tournaments',
+                'Select Match',
                 style: CustomTextStyle.textStyle4,
               ),
             ),
-            SizedBox(height: 5.h,),
-            tournamentHorizontalList(),
-            SizedBox(height: 10.h,),
-
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Text(
-                'Games',
-                style: CustomTextStyle.textStyle4,
-              ),
+            SizedBox(
+              height: 5.h,
             ),
-            gamesGridViewList()
+            matchesGridViewList(),
           ],
         ),
       ),

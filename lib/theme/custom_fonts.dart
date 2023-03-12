@@ -14,4 +14,8 @@ class CustomTextStyle {
       color: CustomColors.color2, fontSize: 18.sp, fontWeight: FontWeight.bold);
   static TextStyle textStyle5 = TextStyle(
       color: CustomColors.color1, fontSize: 14.sp, fontWeight: FontWeight.bold);
+  static TextStyle textStyle6 = TextStyle(
+      color: CustomColors.color1, fontSize: 18.sp, fontWeight: FontWeight.bold);
+  static TextStyle textStyle7 = TextStyle(
+      color: CustomColors.color2, fontSize: 14.sp, fontWeight: FontWeight.bold);
 }

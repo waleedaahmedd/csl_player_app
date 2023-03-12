@@ -1,6 +1,9 @@
 import 'package:csl_player_app/screens/home_screen.dart';
+import 'package:csl_player_app/screens/referee_home_screen.dart';
+import 'package:csl_player_app/screens/referee_match_screen.dart';
 import 'package:csl_player_app/screens/signup_screen.dart';
 import 'package:csl_player_app/screens/splash_screen.dart';
+import 'package:csl_player_app/screens/tornament_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -14,6 +17,12 @@ class RouteGenerator {
          return MaterialPageRoute(builder: (_) => const SignUpScreen());
       case '/home':
           return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case '/referee_home':
+        return MaterialPageRoute(builder: (_) => const RefereeHomeScreen());
+      case '/tournament_detail':
+        return MaterialPageRoute(builder: (_) => const TournamentDetailScreen());
+      case '/referee_match':
+        return MaterialPageRoute(builder: (_) => const RefereeMatchScreen());
       case '/wineries_list':
       //    return MaterialPageRoute(builder: (_) => const WineriesListScreen());
       case '/tasting_details':

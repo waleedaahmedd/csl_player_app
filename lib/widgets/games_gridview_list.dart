@@ -12,7 +12,7 @@ Widget gamesGridViewList() => Expanded(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 20,
-          mainAxisExtent: 190,
+          mainAxisExtent: 200,
         ),
 
         itemCount: 5,

@@ -63,9 +63,21 @@ class LoginScreen extends StatelessWidget {
               SizedBox(
                 height: 40.h,
               ),
-              CustomButton1(text: 'LOGIN', onPressed: () {
-                Navigator.pushNamed(context, '/home');
-              }),
+              Row(
+                children: [
+                  Expanded(
+                    child: CustomButton1(text: 'LOGIN AS REFEREE', onPressed: () {
+                      Navigator.pushNamed(context, '/referee_home');
+                    }),
+                  ),
+                  SizedBox(width: 20.w,),
+                  Expanded(
+                    child: CustomButton1(text: 'LOGIN AS PLAYER', onPressed: () {
+                      Navigator.pushNamed(context, '/home');
+                    }),
+                  ),
+                ],
+              ),
               SizedBox(
                 height: 10.h,
               ),
